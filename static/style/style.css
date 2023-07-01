@@ -1,0 +1,106 @@
+body {
+  font-family: sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(202, 213, 213);
+}
+p {
+  margin-left: 10px;
+}
+h2 {
+  margin-left: 10px;
+}
+h1 {
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hi {
+  font-family: "Linux Libertine", "Georgia", "Times", serif;
+  margin-bottom: 5px;
+}
+
+.list-conteiner {
+  border: solid;
+  /* Рамка */
+  display: inline-block;
+  padding: 10px;
+  border-width: 0.5px;
+  /* товщина рамки */
+  margin-left: 10px;
+}
+.list-conteiner > p {
+  text-align: center;
+  /* розмістити по центру */
+  font-weight: bold;
+  /* товщина */
+  margin: 0px;
+}
+.list-conteiner > ol {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  /* відступ від блоку */
+  padding-left: 20px;
+  /* відступ з середини */
+}
+.list-conteiner > ol > li {
+  margin-top: 5px;
+}
+.rightborder {
+  float: right;
+  /* пересування rigth-left, обтікання */
+  border: solid;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.rightborder > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* nav panel */
+
+.navi_panel {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.navi_panel {
+  background-color: black;
+  color: aliceblue;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navi_panel > nav > ul {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding-left: 0px;
+}
+
+.navi_panel > nav > ul > li {
+  margin: 10px;
+}
+
+input {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  /* закркглення кутів */
+}
+
+.navi_panel > nav > ul > li > a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+nav {
+  padding-top: 5px;
+}
+.separator {
+  border-top: 1px solid #000000;
+}
