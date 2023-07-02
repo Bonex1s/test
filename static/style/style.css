@@ -4,23 +4,20 @@ body {
   margin: 0px;
   background-color: rgb(202, 213, 213);
 }
-p {
-  margin-left: 10px;
-}
-h2 {
-  margin-left: 10px;
-}
-h1 {
-  margin-left: 10px;
-}
 
 a {
   text-decoration: none;
+  color: rgb(103, 94, 81);
+  /* прибрати все з посилання */
 }
 
 .hi {
   font-family: "Linux Libertine", "Georgia", "Times", serif;
   margin-bottom: 5px;
+}
+.text {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .list-conteiner {
@@ -30,7 +27,6 @@ a {
   padding: 10px;
   border-width: 0.5px;
   /* товщина рамки */
-  margin-left: 10px;
 }
 .list-conteiner > p {
   text-align: center;
@@ -55,7 +51,7 @@ a {
   border: solid;
   padding: 5px;
   margin-left: 10px;
-  margin-right: 10px;
+
   margin-top: 10px;
 }
 
@@ -87,20 +83,76 @@ a {
 .navi_panel > nav > ul > li {
   margin: 10px;
 }
+.navi_panel > nav > ul > li > a {
+  color: antiquewhite;
+}
 
 input {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   /* закркглення кутів */
+  /* input додає поле з паролем або логином */
 }
 
-.navi_panel > nav > ul > li > a {
-  color: antiquewhite;
-  text-decoration: none;
-}
 nav {
-  padding-top: 5px;
+  /* padding-top: 5px; */
 }
 .separator {
   border-top: 1px solid #000000;
+}
+
+@media (max-width: 900px) {
+  .navi_panel {
+    flex-direction: column;
+  }
+}
+/*  змінює властивости флексу на 900px*/
+
+.page {
+  display: flex;
+}
+
+.header {
+  width: 14%;
+}
+
+.section {
+  width: 86%;
+}
+
+/* leftlist --------------- */
+
+.header > ol {
+  list-style: none;
+  /* border-bottom-style: solid; */
+  /* нижня частина рамки (линия) */
+  /* border-width: 0.5px; */
+  margin: 30px;
+  padding: 0px;
+  padding-bottom: 10px;
+}
+.header {
+  background-color: rgb(163, 172, 172);
+}
+.header > div {
+  width: 100%;
+}
+.header > div > img {
+  width: 180px;
+  margin-left: 21px;
+  margin-top: 10px;
+}
+.leftlist > h4 {
+  font-weight: normal;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0,
+    #000000f7 33%,
+    #2d2e30 66%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  margin-bottom: 5px;
 }
